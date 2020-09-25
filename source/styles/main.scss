@@ -3,22 +3,24 @@ body {
     margin: 0;
     padding: 0;
 }
+// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Varela+Round&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Varela+Round&display=swap');
 @font-face {
     font-family: Lato;
     src:url(../fonts/Lato/Lato-Light.ttf);
-//     font-family: LatoR;
-//     src:url(../fonts/Lato/Lato-Regular.ttf);
-//     font-family: LatoB;
-//     src:url(../fonts/Lato/Lato-Bold.ttf);
-//     font-family: LatoBl;
-//     src:url(../fonts/Lato/Lato-Black.ttf);
-    font-family: VRoud;
+    font-family: Lato-Regular;
+    src:url(../fonts/Lato/Lato-Regular.ttf);
+    font-family: LatoB;
+    src:url(../fonts/Lato/Lato-Bold.ttf);
+    font-family: Lato-Bold;
+    src:url(../fonts/Lato/Lato-BoldItalic.ttf);
+    font-family: Varela-Round;
     src:url(../fonts/Varela_Round/VarelaRound-Regular.ttf);
 }
 .container {
     width: 80%;
     margin: 0 auto;
+    // width: 1100px;
 }
 .gray {
     color: gray;
@@ -77,9 +79,9 @@ li {
     font-weight: bold;
     margin-left: 30px;
 }
-li:first-child {
-    margin-left: 0px;
-}
+// li:first-child {
+//     margin-left: 0px;
+// }
 .menu__list {
     display: flex;
 }
@@ -110,7 +112,7 @@ li:first-child {
 }
 .header__title {
     color: #26272d;
-    font-family: "Varela Round";
+    font-family: "Varela-Round";
     font-size: 62px;
     font-weight: bold;
     line-height: 72px;
@@ -124,6 +126,7 @@ li:first-child {
     line-height: 28px;
     margin-top: 40px;
     text-align-last: center;
+    margin-bottom: 62px;
 }
 .header__btn-play {
     background-image: url(../img/Play_Icon.png);
@@ -139,22 +142,24 @@ li:first-child {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
-    padding-top: 15px;
+    line-height: 50px;
     padding-left: 15px;
-    margin-top: 62px;
+
     opacity: 0.1;
+    margin-bottom: 55px;
 }
 .header__btn-play:hover {
     opacity: 10;
     font-weight: bold;
 }
 .header__icon {
-    background-image: url(../img/iPhone_6.png);
-    background-position:center bottom;
+    background-image: url(../img/iPhone_61.png);
+    background-position:center;
     width: 369px;
-    height: 466px;
-    box-shadow:  3px 9px 16px rgba(166, 166, 166, 0.14), inset 0 0 1px rgba(238, 238, 238, 0.965);
-    margin-top: 55px;
+    height: 455px;
+    // box-shadow:  3px 9px 16px rgba(166, 166, 166, 0.14), inset 0 0 1px rgba(238, 238, 238, 0.965);
+    background-position-y: 0px;
+    background-repeat: no-repeat;
 }
 ul {
     padding: 0;
@@ -164,7 +169,6 @@ ul {
     height: 2.5px;
     background-color: black;
     position: relative;
-    // margin-top: 8px;
 }
 .menu__icon:before {
     content: '';
@@ -207,20 +211,15 @@ ul {
 .menua {
     display: none;
 }
-@media (max-width: 767px) {
-.menua {
-    display: none;
-}
-.menu__list {
-    display: none;
-}
-.menua.active {
-    display: block;
-}
-}
 .features {
     padding-top: 127px;
     padding-bottom: 167px;
+}
+img[src="../img/Lock_Icon.png"] {
+    margin-bottom: 45px;
+}
+img[src="../img/Clock_Icon.png"] {
+    margin-bottom: 46px;
 }
 .feature__title {
     color: #26272d;
@@ -228,7 +227,7 @@ ul {
     font-size: 26px;
     font-weight: 300;
     line-height: 34px;
-    margin-top: 45px;
+    margin-bottom: 44px;
 }
 .feature__subtitle {
     color: #8c8f94;
@@ -236,7 +235,6 @@ ul {
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
-    margin-top: 48px;
 }
 .features__container-left {
     width: 40%;
@@ -250,27 +248,40 @@ ul {
     // width: 100%;
 }
 .iphonefeatures {
-    height: 90vh;
-    background-image: url(../img/iPhone.png);
-    background-repeat: no-repeat;
-    background-position-x: -100px;
-    padding-top: 86px;
-    background-origin: content-box;
-    background-size: contain;
+    // height: 90vh;
+    // background-image: url(../img/iPhone.png);
+    // background-repeat: no-repeat;
+    // background-position: center left -100px;
+    // padding-top: 86px;
+    // background-origin: content-box;
+    // background-size: contain;
+    padding: 86px 0 42px 0;
+    padding-right: 15%;
 }
 .iphonefeatures__title {
     width: 469px;
+    margin-bottom: 73px;
+    color: #26272d;
+    font-family: 'Varela-Round';
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 52px;
 }
 .iphonefeatures__subtitle {
     width: 469px;
-    margin-top: 73px;
+    margin-bottom: 75px;
 }
 .iphonefeatures__container {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-right: 10%;
-    padding-left: 50%;
+    justify-content: space-between;
+    position: relative;
+}
+.iphonefeatures__column {
+    position: absolute;
+    right: 5%;
+}
+.iphonefeatures__container-row {
+    display: flex;
 }
 .iphonefeatures__btn {
     width: 202px;
@@ -286,7 +297,8 @@ ul {
     padding-left: 26px;
     background-repeat: no-repeat;
     background-position: center right 18px;
-
+    align-content: flex-start;
+    margin-right: 20px;
 }
 .iphonefeatures__more {
     width: 142px;
@@ -299,7 +311,746 @@ ul {
     font-weight: bold;
     text-align: center;
     padding-top: 9px;
+    margin-right: 106px;
 }
 .iphonefeatures__more:hover {
     opacity: 0.1;
+}
+img[src="../img/iPhone.png"] {
+    margin-left: -150px;
+    max-width: 100%;
+    position: relative;
+}
+.partners {
+    padding: 205px 0 197px 0;
+    background: url(../img/2-layers.png);
+    background-repeat: no-repeat;
+    background-position: center right -110px;
+    background-origin: content-box;
+    background-size: contain;
+    // background-position-x: 800px;
+
+}
+.partners__title {
+    width: 279px;
+    height: 94px;
+}
+.partners__subtitle {
+    width: 469px;
+    height: 159px;
+    margin-bottom: 68px;
+}
+.partners__title-parthners {
+    color: #26272d;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 31px;
+}
+.partners__icon {
+    width: 294px;
+    height: 36px;
+    background: url(../img/Dropbox_Logo.png) left, url(../img/Evernote_Logo.png) right;
+    background-size: 45%;
+    background-repeat: no-repeat;
+}
+.iphonescreens {
+    width: 100%;
+    padding: 143px 0 123px 0;
+    background-color: #f5f5f8;
+}
+.iphonescreens__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.iphonescreens__title {
+    margin-bottom: 47px;
+}
+.iphonescreens__line {
+    width: 50px;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #267df4;
+    margin-bottom: 43px;
+}
+.iphonescreens__screen {
+    color: #8c8f94;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    /* Text style for "L, anding" */
+    letter-spacing: 1.2px;
+    margin-bottom: 46px;
+}
+.iphonescreens__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.iphonescreens__block > img {
+    width: 320px;
+    height: 568px;
+    margin-right: 30px;
+}
+img[src="../img/Screen_3.png"] {
+    width: 369px;
+    height: 753px;
+}
+.readytobuy {
+    background-color: #f5f5f8;
+    padding: 75px 0 131px 0;
+    width: 100%;
+}
+.readytobuy__logo {
+    margin-bottom: 37px;
+}
+.readytobuy__logo > span {
+    opacity: 0.5;
+    color: #3a3d4b;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: bolder;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+span[value="New"] {
+    font-family: 'Lato - Bold';
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+span[value="Providence"] {
+    font-family: "Lato - Regular";
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+.readytobuy__title {
+    color: #3a3d4b;
+    font-family: "Varela-Round";
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 52px;
+    margin-bottom: 47px;
+}
+.readytobuy__send-invite {
+    width: 502px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #222328;
+    margin-bottom: 66px;
+}
+input[value="denis@getcraftwork.com"] {
+    color: #3a3d4b;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    width: 322px;
+}
+input[value="Send Invite"] {
+    width: 164px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #6fc754;
+    position: absolute;
+}
+.subscribe__send {
+    margin-top: 2.8px;
+    border:0;
+    text-shadow: none;
+    opacity: 0.2;
+    color: #ffffff;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: bold;
+    background-image: url(../img/Arrow_Icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 139px;
+}
+.subscribe__send:focus {
+    outline: none;
+    opacity: 1;
+}
+.subscribe__mail {
+    opacity: 0.2;
+}
+.subscribe__mail:focus {
+    outline: none;
+    opacity: 1;
+}
+.readytobuy__download-text {
+    margin-bottom: 22px;
+    color: #3a3d4b;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* Text style for "o, r Downl" */
+    letter-spacing: 1.2px;
+}
+.readytobuy__download-btn {
+    width: 210px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #131315;
+    color: #ffffff;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 19px;
+    background-image: url(../img/Apple_Icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 28px;
+    background-position-x: 27px;;
+}
+.readytobuy__download-btn > span {
+    line-height: 24.84px;
+}
+.readytobuy__download-btn > p {
+    font-size: 23px;
+    line-height: 22px;
+    margin: 0;
+}
+.readytobuy__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.customers{
+    padding: 132px 0 128px 0;
+}
+img[alt="Cameron"]{
+    margin-left: 130px;
+    margin-right: 130px;
+}      
+.customers__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/Arrow.png), 
+        url(../img/Arrow2.png) 100% 0;
+    background-repeat: no-repeat;
+    background-position-y: 45px;
+    margin-bottom: 75px;
+}
+.customers__title {
+    color: #26272d;
+    font-family: 'Lato';
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 48px;
+}
+.customers__subtitle {
+    text-align: center;
+    width: 554px;
+    margin: 0 auto 30px;
+}
+.customers__stars {
+    // background-image: url(../img/Star_Icon.png);
+    width: 100%;
+    height: 23px;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-bottom: 68px;
+}
+.customers__stars > img {
+    margin-left: 8px;
+}
+.customers__stars > img:first-child {
+    margin-left: 0;
+}
+.customers__name {
+    color: #26272d;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+.plan {
+    background-color: #f4f4f5;
+    padding: 159px 0 191px 0;
+}
+.plan__select-text {
+    color: #26272d;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 20px;
+}
+.plan__talk {
+    color: #8c8f94;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.letstalk {
+    color: #267df4;
+    text-decoration: underline;
+}
+.plan__title {
+    margin-bottom: 67px;
+}
+.plan__subtitle {
+    margin-bottom: 44px;
+    width: 351px;
+}
+.yourplan {
+    width: 340px;
+    height: 550px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+.yourplan__icon {
+    width: 63px;
+    height: 28px;
+    border-radius: 14px;
+    border: 1px solid #26292c;
+    color: #26272d;
+    font-family: 'Lato';
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    margin-bottom: 56px;
+    text-align: center;
+    line-height: 2.5;
+}
+.yourplan__title {
+    color: #26272d;
+    font-family: 'Lato';
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 38px;
+    margin-bottom: 29px;
+}
+.yourplan__subtitle {
+    color: #8c8f94;
+    font-family: 'Lato';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-bottom: 47px;
+}
+.yourplan__feature {
+    list-style-image: url(../img/On_Icon.png);
+    color: #26292c;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 27px;
+}
+.yourplan__list {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin-bottom: 89px;
+}
+.yourplan__btn {
+    width: 212px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #267df4;
+    color: #ffffff;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 2.6;
+}
+.btn_plan2 {
+    width: 202px;
+    height: 42px;
+    border-radius: 21px;
+    border: 1px solid #267df4;
+}
+.yourplan_2 {
+    width: 340px;
+    height: 510px;
+    background-color: #ebebed;
+    margin-top: 20px;
+    margin-left: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.yourplan_2 > ul {
+    margin-bottom: 39px;
+}
+.crocant {
+    display: flex;
+    position: relative;
+    width: 670px;
+}
+.plan__container {
+    display: flex;
+    flex-direction: column;
+    // width: 30%;
+}
+.plan__container-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.switch {
+    margin-bottom: 77px;
+}
+input[name="you"] {
+    position: relative;
+    width: 258px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #26292c;
+    -webkit-appearance: none;
+    outline: none;
+    background-color: #f4f4f5;
+}
+input[name="you"]:before {
+    content: '';
+    position: absolute;
+    width: 124px;
+    height: 42px;
+    box-shadow: 10px 28px 50px rgba(92, 95, 101, 0.28), 2px 5px 20px rgba(61, 61, 62, 0.15);
+    border-radius: 21px;
+    background-color: transparent;
+    top: 3.3px;
+    left: 2px;
+}
+input[name="you"]:after {
+    content: '';
+    top: 15px; 
+    left: 32px;
+}
+input:checked[name="you"]:before {
+    left: 130px;
+    content: 'Company';
+    color: #26292c;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 2.7;
+}
+input:checked[name="you"]:after {
+    content: 'Individual';
+    opacity: 0.4;
+    color: #26292c;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+}
+input:not(:checked)[name="you"]:after {
+    opacity: 0.4;
+    content: 'Company';
+    padding-left: 125px;
+    position: relative;
+    color: #26292c;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+}
+input:not(:checked)[name="you"]::before {
+    content: 'Individual';
+    color: #26292c;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400; 
+    line-height: 2.7;
+    text-align: center;
+}
+.subscribe {
+    padding: 86px 0 86px 0;
+}
+.subscribe_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.subscribe__title {
+    margin-bottom: 50px;
+}
+.subscribe__mail {
+    width: 413px;
+    border-radius: 21px;
+    height: 42px;
+    border-color: transparent;
+    margin-left: 10px;
+    margin-top: 3px;
+    border: 0;
+    opacity: 0.7;
+    color: #26292c;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: bold;
+}
+.subscribe__mail:focus {
+    outline:none;
+}
+.btn-subscribe {
+    position: absolute;
+    width: 134px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #6fc754;
+    margin-top: 3px;
+    border: 0;
+    color: #ffffff;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn-subscribe:focus {
+    outline:none;
+    opacity: 0.4;
+}
+.subscribe__block {
+    width: 562px;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #26292c;
+    // opacity: 0.2;
+    margin-bottom: 28px;
+}
+.subscribe__text {
+    color: #8c8f94;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+}
+footer {
+    padding: 90px 0 36px 0;
+}
+.footer__logo {
+    background-image: url(../img/Logo.png);
+    width: 140px;
+    height: 13px;
+    background-repeat: no-repeat;
+    margin-top: 13px;
+    margin-bottom: 34px;
+}
+.footer__text {
+    color: #8c8f94;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 24px;
+    width: 245px;
+    margin-bottom: 32px;
+}
+.footer__appstore-icon {
+    width: 140px;
+    height: 42px;
+    background-image: url(../img/Download.png);
+    margin-bottom: 40px;
+}
+.footer__social-list {
+    display: flex;
+    margin-bottom: 131px;
+}
+.footer__social-item:first-child {
+    margin-left: 0;
+}
+.footer__content-title {
+    color: #26272d;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+.footer__content-item {
+    color: #8c8f94;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-right: 95px;
+}
+.footer__content-item:last-child {
+    margin-right: 0;
+}
+.footer__container-row {
+    display: flex;
+    justify-content: space-between;
+    // flex-direction: column;
+    flex-wrap: wrap;
+}
+.footer__content {
+    display: flex;
+    // width: 30%;
+}
+.footer__left {
+    // width:50%;
+}
+.line-bar {
+    width: 100%;
+    height: 1px;
+    border-radius: 1px;
+    background-color: #26292c;
+    opacity: 0.08;
+    margin-bottom: 39px;
+}
+.footer__copyrights {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__copyrights-text {
+    color: #8c8f94;
+    font-family: 'Lato';
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 37px;
+    // text-decoration: underline; 
+    // width: 20%;
+}
+.footer__madein {
+    color: #26272d;
+    font-family: 'LatoB';
+    font-size: 9px;
+    font-weight: 700;
+    line-height: 37px;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    background-image: url(../img/madiinlogo.png);
+    background-repeat: no-repeat;
+    width: 224px;
+    height: 35px;
+    background-position: top right;
+}
+img[src="../img/plus.png"] {
+    width: 10%;
+    display: none;
+}
+.com {
+    display: none;
+}
+@media (max-width: 1283px) {
+    .plan__container-row {
+        flex-direction: column;
+}
+.plan__container-left {
+    width: 100%;
+    text-align: center;
+}
+.plan__subtitle {
+    width: 100%;
+}
+.plan__talk {
+    margin-bottom: 20px;
+}
+.footer__left {
+    width: 40%;
+}
+.features__content {
+    flex-direction: column;
+    text-align: center;
+}
+.features__container-left {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.features__container-rigth {
+    width: 100%;
+}
+img[src="../img/Lock_Icon.png"] {
+    margin-bottom: 30px;
+}
+img[src="../img/Clock_Icon.png"] {
+    margin-bottom: 30px;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .footer__social-list {
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu__list > li {
+        display: none;
+    }
+    img[src="../img/plus.png"] {
+        display: block;
+        width: 20px;
+        height: 20px;
+    }
+    .header__link__help {
+        display: none;
+    }
+    .header__link__contacts {
+        display: none;
+    }
+    .header__btn {
+        display: none;
+    }
+    .menu__body {
+        // display: none;
+    }
+    .menu__list {
+        display: none;
+    }
+    .knop {
+        background-image: url(../img/Menu_Icon.png);
+        width: 20px;
+        height: 12px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: 0;
+        outline: none;
+        background-color: white;
+    }
+    .dropdown-menu {
+        position: absolute;
+        margin-top: 150px;
+    }
+    .dropdown-menu > p {
+        color: #26272d;
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .knop2 {
+        background-image: url(../img/plus.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 20px;
+        height: 15px;
+        border: 0;
+        outline: none;
+        background-color: white;
+    }
+    .com {
+        display: block;
+    }
 }
