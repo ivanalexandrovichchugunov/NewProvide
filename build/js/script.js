@@ -1,0 +1,1 @@
+var res=$(".dropdown-menu");function funk(){"none"==res.css("display")?res.fadeIn(100):res.fadeOut(100)}$(".knop").on("click",funk),$(document).click(function(e){$(e.target).closest(res).length||$(e.target).closest(".knop").length||(res.fadeOut(100),e.stopPropagation())});
