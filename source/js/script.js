@@ -92,3 +92,4 @@ function funk(){
     res.fadeOut(100);
   }
 }
+
