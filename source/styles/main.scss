@@ -479,6 +479,7 @@ input[value="Send Invite"] {
 }
 .subscribe__mail {
     opacity: 0.2;
+    background-color: #f5f5f8;
 }
 .subscribe__mail:focus {
     outline: none;
@@ -951,6 +952,9 @@ footer {
 img[src="../img/plus.png"] {
     width: 10%;
     display: none;
+}
+img[src="../img/Screen_5.png"] {
+    margin-right: 0;
 }
 .dropdown-menu {
     display: none;
