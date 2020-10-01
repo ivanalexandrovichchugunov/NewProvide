@@ -1,0 +1,113 @@
+.iphonefeatures {
+    padding: 86px 0 42px 0;
+    padding-right: 15%;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__column {
+        position: absolute;
+        right: 5%;
+    }
+    &__title {
+        width: 469px;
+        margin-bottom: 73px;
+        color: #26272d;
+        font-family: 'Varela-Round';
+        font-size: 42px;
+        font-weight: bold;
+        line-height: 52px;
+    }
+    &__subtitle {
+        width: 469px;
+        margin-bottom: 75px;
+    }
+    &__container-row {
+        display: flex;
+    }
+    &__btn {
+        width: 202px;
+        height: 42px;
+        border-radius: 21px;
+        background-color: #267df4;
+        background-image: url(../img/Arrow_Icon.png);
+        color: #ffffff;
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 11px;
+        padding-left: 26px;
+        background-repeat: no-repeat;
+        background-position: center right 18px;
+        align-content: flex-start;
+        margin-right: 20px;
+    }
+    &__more {
+        width: 142px;
+        height: 42px;
+        border-radius: 21px;
+        border: 1px solid #26272d;
+        color: #26272d;
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 9px;
+        margin-right: 106px;
+    }
+    &__more:hover {
+        opacity: 0.1;
+    }
+
+        @media (max-width: 1440px) {
+            &__column {
+                position: static;
+            }
+            &__title {
+                width: 100%;
+                text-align: center;
+            }
+            &__subtitle {
+                width: 100%;
+                text-align: center;
+            }
+            &__container-row {
+                justify-content: center;
+            }
+            &__more {
+                margin-right: 0;
+            }
+        }
+        @media (max-width: 768px) {
+            &__container-row {
+                flex-direction: column;
+                align-items: center;
+            }
+            &__btn {
+                margin-bottom: 15px;
+                margin-right: 0;
+            }
+        }
+}
+img[src="../img/iPhone.png"] {
+    margin-left: -150px;
+    max-width: 100%;
+    position: relative;
+}
+
+@media (max-width: 1440px) {
+    img[src="../img/iPhone.png"] {
+        position: static; 
+        display: none;
+    }
+    .iphonefeatures {
+        padding: 86px 10% 42px 10%;
+    }
+}
+@media (max-width: 1024px) {
+    .iphonefeatures {
+        padding: 86px 2.5% 42px 2.5%;
+    }
+}

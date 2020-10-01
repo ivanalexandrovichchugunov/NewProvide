@@ -1,0 +1,138 @@
+.header {
+    width: 100%;
+    background: url(../img/backheader.png) center/cover;
+    padding-top: 61px;
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__menu-link {
+        display: flex;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+    &__link-help {
+        color: #1b1c1e;
+        font-family: 'Lato';
+        opacity: 0.4;
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 30px;
+    }
+    &__link-contacts {
+        color: #26272d;
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 30px;
+    }
+    &__btn {
+        width: 132px;
+        height: 42px;
+        border-radius: 21px;
+        background-color: #267df4;
+        background-image: url(../img/Apple_Icon.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-position-x: 17px;
+        background-position-y: 9px;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: bold;
+        padding-top: 12px;
+        padding-left: 13px;
+    }
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__body-title {
+        color: #26272d;
+        font-family: "Varela-Round";
+        font-size: 62px;
+        font-weight: bold;
+        line-height: 72px;
+        margin-top: 128px;
+    }
+    &__body-subtitle {
+        color: #8c8f94;
+        font-family: 'Lato';
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 28px;
+        margin-top: 40px;
+        text-align-last: center;
+        margin-bottom: 62px;
+    }
+    &__body-btn-play {
+        background-image: url(../img/Play_Icon.png);
+        background-position: center;
+        background-position-x: 42px;
+        background-repeat: no-repeat;
+        width: 205px;
+        height: 50px;
+        border-radius: 25px;
+        border: 1px solid #26272d;
+        color: #26272d;
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 50px;
+        padding-left: 15px;
+        opacity: 0.1;
+        margin-bottom: 55px;
+    }
+    &__body-btn-play:hover {
+        opacity: 10;
+        font-weight: bold;
+    }
+    &__body-icon {
+        background-image: url(../img/iPhone_61.png);
+        background-position:center;
+        width: 369px;
+        height: 455px;
+        // box-shadow:  3px 9px 16px rgba(166, 166, 166, 0.14), inset 0 0 1px rgba(238, 238, 238, 0.965);
+        background-position-y: 0px;
+        background-repeat: no-repeat;
+    }
+    @media (max-width: 1024px) {
+        &__menu-link {
+            display: none;
+        }
+        &__body-title {
+            text-align: center;
+        }
+        &__body-subtitle {
+            text-align: center;
+        }
+    }
+    @media (max-width: 768px) {
+        &__body-icon {
+            display: none;
+        }
+        &__body-subtitle {
+            color: black;
+            opacity: 0.5;
+        }
+        &__body-btn-play {
+            opacity: 0.5;
+        }
+        &__link {
+            display: none;
+        }
+        &__menu {
+            justify-content: center;
+        }
+    }
+}
+

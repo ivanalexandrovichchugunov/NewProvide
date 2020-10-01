@@ -1,0 +1,148 @@
+.readytobuy {
+    background-color: #f5f5f8;
+    padding: 75px 0 131px 0;
+    width: 100%;
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__logo {
+        margin-bottom: 37px;
+    }
+    &__logo > span {
+        opacity: 0.5;
+        color: #3a3d4b;
+        font-family: 'Lato';
+        font-size: 12px;
+        font-weight: bolder;
+        line-height: 22px;
+        text-transform: uppercase;
+    }
+    &__title {
+        color: #3a3d4b;
+        font-family: "Varela-Round";
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 52px;
+        margin-bottom: 47px;
+        text-align: center;
+    }
+    &__send-invite {
+        width: 502px;
+        height: 50px;
+        border-radius: 25px;
+        border: 1px solid #222328;
+        margin-bottom: 66px;
+    }
+    &__subscribe-mail {
+        opacity: 0.2;
+        background-color: #f5f5f8;
+        border: none;
+    }
+    &__subscribe-mail:focus {
+        outline: none;
+        opacity: 1; 
+        // border-radius: 50%;
+    }
+    &__subscribe-send {
+        margin-top: 2.8px;
+        border:0;
+        text-shadow: none;
+        opacity: 0.2;
+        color: #ffffff;
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: bold;
+        background-image: url(../img/Arrow_Icon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position-x: 139px;
+    }
+    &__subscribe-send:focus {
+        outline: none;
+        opacity: 1;
+    }
+    &__download-text {
+        margin-bottom: 22px;
+        color: #3a3d4b;
+        font-family: 'Lato';
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        /* Text style for "o, r Downl" */
+        letter-spacing: 1.2px;
+    }
+    &__download-btn {
+        width: 210px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: #131315;
+        color: #ffffff;
+        font-family: 'Lato';
+        font-size: 12px;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 5px;
+        padding-left: 19px;
+        background-image: url(../img/Apple_Icon.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 24px 28px;
+        background-position-x: 27px;;
+    }
+    &__download-btn > span {
+        line-height: 24.84px;
+    }
+    &__download-btn > p {
+        font-size: 23px;
+        line-height: 22px;
+        margin: 0;
+    }
+        @media (max-width: 768px) {
+            &__send-invite {
+                width: 300px;
+            }
+
+        }
+}
+span[value="New"] {
+    font-family: 'Lato-Bold';
+    font-weight: bold;
+    letter-spacing: 1.2px;
+}
+span[value="Providence"] {
+    font-family: "Lato - Regular";
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+input[placeholder="denis@getcraftwork.com"] {
+    color: #3a3d4b;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: 400;
+    width: 322px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+input[value="Send Invite"] {
+    width: 164px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #6fc754;
+    position: absolute;
+}
+    @media (max-width: 768px) {
+        input[placeholder="denis@getcraftwork.com"] {
+            width: 200px;
+            margin-left: 1px;
+        }
+        input[value="Send Invite"] {
+            width: 95px;
+        }
+    }
+
+

@@ -1,0 +1,145 @@
+.footer {
+    padding: 90px 0 36px 0;
+
+    &__container-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__logo {
+        background-image: url(../img/Logo.png);
+        width: 140px;
+        height: 13px;
+        background-repeat: no-repeat;
+        margin-top: 13px;
+        margin-bottom: 34px;
+    }
+    &__text {
+        color: #8c8f94;
+        font-family: 'Lato';
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 24px;
+        width: 245px;
+        margin-bottom: 32px;
+    }
+    &__appstore-icon {
+        width: 140px;
+        height: 42px;
+        background-image: url(../img/Download.png);
+        margin-bottom: 40px;
+    }
+    &__social-list {
+        display: flex;
+        margin-bottom: 131px;
+    }
+    &__social-item:first-child {
+        margin-left: 0;
+    }
+    &__content-title {
+        color: #26272d;
+        font-family: 'Lato';
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 22px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+    &__content-item {
+        color: #8c8f94;
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 36px;
+        margin-right: 95px;
+    }
+    &__content-item:last-child {
+        margin-right: 0;
+    }
+    
+    &__content {
+        display: flex;
+        // width: 30%;
+    }
+    &__copyrights {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__copyrights-text {
+        color: #8c8f94;
+        font-family: 'Lato';
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 37px;
+        // text-decoration: underline; 
+        // width: 20%;
+    }
+    &__madein {
+        color: #26272d;
+        font-family: 'LatoB';
+        font-size: 9px;
+        font-weight: 700;
+        line-height: 37px;
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+        background-image: url(../img/madiinlogo.png);
+        background-repeat: no-repeat;
+        width: 224px;
+        height: 35px;
+        background-position: top right;
+    }
+    &__letstalk {
+        color: #267df4;
+        text-decoration: underline;
+    }
+    @media (max-width: 1024px) {
+        &__left {
+            width: auto;
+        }
+        &__container-row {
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        &__text {
+            width: auto;
+            text-align: center;
+        }
+        &__logo {
+            width: auto;
+            background-position: center;
+        }
+        &__appstore-icon {
+            background-position: center;
+            width: auto;
+            background-repeat: no-repeat;
+        }
+        &__social-list {
+            justify-content: center;
+        }
+    }
+        @media (max-width: 768px) {
+            &__copyrights-text {
+                display: none;
+            }
+            &__copyrights {
+                justify-content: center;
+            }
+            &__content-item {
+                margin-right: 20px;
+            }
+        }
+}
+    @media (max-width: 1024px) {
+        .footer{
+            padding: 0 0 36px 0;
+        }
+}
+.line-bar {
+    width: 100%;
+    height: 1px;
+    border-radius: 1px;
+    background-color: #26292c;
+    opacity: 0.08;
+    margin-bottom: 39px;
+}
