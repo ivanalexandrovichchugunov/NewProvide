@@ -55,12 +55,7 @@ a {
     text-decoration: none;
     color: black;
 }
-    @media (max-width: 1440px) {
-        img[src="../img/iPhone.png"] {
-            position: static; 
-            display: none;
-        }
-    }
+
     @media (max-width: 768px) {
         .container {
             width: 90%;
