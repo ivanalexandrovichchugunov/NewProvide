@@ -56,10 +56,8 @@
     &__content-item:last-child {
         margin-right: 0;
     }
-    
     &__content {
         display: flex;
-        // width: 30%;
     }
     &__copyrights {
         display: flex;
@@ -71,8 +69,6 @@
         font-size: 14px;
         font-weight: bold;
         line-height: 37px;
-        // text-decoration: underline; 
-        // width: 20%;
     }
     &__madein {
         color: #26272d;
@@ -119,14 +115,18 @@
         }
     }
         @media (max-width: 768px) {
-            &__copyrights-text {
-                display: none;
-            }
             &__copyrights {
                 justify-content: center;
+                flex-direction: column;
+                align-items: center;
             }
             &__content-item {
                 margin-right: 20px;
+                font-size: 12px;
+            }
+            &__content {
+                width: 80%;
+                justify-content: space-between;
             }
         }
 }

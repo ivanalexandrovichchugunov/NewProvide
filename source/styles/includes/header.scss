@@ -11,7 +11,15 @@
     &__menu-link {
         display: flex;
     }
-
+    &__menu-link  {
+        background-image: url(../img/Menu_Icon.png);
+        background-position: left;
+        background-size: 20px;
+        background-repeat: no-repeat;
+    }
+    &__logo {
+        margin-left: 3%;
+    }
     &__link {
         display: flex;
         align-items: center;
@@ -105,6 +113,54 @@
         background-position-y: 0px;
         background-repeat: no-repeat;
     }
+    &__menu-drop {
+        background-image: url(../img/Menu_Icon.png);
+        width: 20px;
+        height: 12px;
+        position: relative;
+        display: none;
+    }
+    &__menu-drop > ul {
+        display: none;
+        padding-top: 20px;
+    }
+    &__menu-drop li {
+        margin-bottom: 10px;
+    }
+    &__menu-drop:hover ul {
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: -30px;
+        width: 100px;
+    }
+    &__menu-drop-left {
+        background-image: url(../img/plus.png);
+        width: 30px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        color: black;
+        position: relative;
+        display: none;
+    }
+    &__menu-drop-left li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    &__menu-drop-left ul {
+        display: none;
+        padding-top: 25px;
+    }
+    &__menu-drop-left:hover ul {
+        display: block;
+        top: -10px;
+        right: -40%;
+        position: absolute;
+    }
     @media (max-width: 1024px) {
         &__menu-link {
             display: none;
@@ -114,6 +170,27 @@
         }
         &__body-subtitle {
             text-align: center;
+        }
+        &__menu-drop {
+            display: block;
+        }
+        &__menu-drop:hover ul {
+            display: block;
+        }
+        &__link {
+            display: none;
+        }
+        &__menu-drop-left {
+            display: block;
+        }
+        &__link-help {
+            margin-right: 0;
+        }
+        &__link-contacts {
+            margin-right: 0;
+        }
+        &__menu {
+            justify-content: space-between;
         }
     }
     @media (max-width: 768px) {
@@ -133,6 +210,38 @@
         &__menu {
             justify-content: center;
         }
+        &__body-title {
+            margin-top: 100px;
+            font-size: 34px;
+            line-height: 30px;
+        }
+        &__menu-drop {
+            display: block;
+        }
+        &__menu-drop:hover ul {
+            display: block;
+        }
+        &__link {
+            display: none;
+        }
+        &__menu-drop-left {
+            display: block;
+        }
+        &__menu {
+            justify-content: space-between;
+        }
+        &__link-help {
+            margin-right: 0;
+        }
+        &__link-contacts {
+            margin-right: 0;
+        }
     }
-}
+}   
+
+        @media (max-width: 768px) {
+            .header {
+                padding-top: 10px;
+            }
+        }
 

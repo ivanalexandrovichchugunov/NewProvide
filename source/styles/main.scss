@@ -3,8 +3,7 @@ body {
     margin: 0;
     padding: 0;
 }
-// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Varela+Round&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Varela+Round&display=swap');
+@import 'normalize.scss';
 @import 'includes/header.scss';
 @import 'includes/features.scss';
 @import 'includes/iphonefeatures.scss';
@@ -20,10 +19,6 @@ body {
     src:url(../fonts/Lato/Lato-Light.ttf);
     font-family: Lato-Regular;
     src:url(../fonts/Lato/Lato-Regular.ttf);
-    font-family: LatoB;
-    src:url(../fonts/Lato/Lato-Bold.ttf);
-    font-family: Lato-Bold;
-    src:url(../fonts/Lato/Lato-BoldItalic.ttf);
     font-family: Varela-Round;
     src:url(../fonts/Varela_Round/VarelaRound-Regular.ttf);
 }
@@ -56,11 +51,21 @@ li {
 ul {
     padding: 0;
 }
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
-    .partners {
-        background: none;
-    }
+a {
+    text-decoration: none;
+    color: black;
 }
+    @media (max-width: 1440px) {
+        img[src="../img/iPhone.png"] {
+            position: static; 
+            display: none;
+        }
+    }
+    @media (max-width: 768px) {
+        .container {
+            width: 90%;
+        }
+        .partners {
+            background: none;
+        }
+    }
