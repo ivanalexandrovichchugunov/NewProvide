@@ -192,6 +192,9 @@
         &__menu {
             justify-content: space-between;
         }
+        .dropdown {
+            display: block;
+        }
     }
     @media (max-width: 768px) {
         &__body-icon {
@@ -244,4 +247,106 @@
                 padding-top: 10px;
             }
         }
-
+.dropbtn {
+    background-image: url(../img/Menu_Icon.png);
+    width: 20px;
+    height: 12px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn2 {
+    background-image: url(../img/plus.png);
+    width: 20px;
+    height: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: white;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+  }
+  .dropbtn:hover, .dropbtn:focus {
+    outline: none;
+  }
+  .dropbtn2:hover, .dropbtn2:focus {
+    outline: none;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown2 {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+    color: #26272d;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+  }
+  .dropdown-contentrigth {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    text-align: center;
+    border-radius: 20px;
+  }
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-contentrigth a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #ddd}
+  .dropdown-contentrigth a:hover {background-color: #ddd}
+  .show {display:block;}
+  .show2 {display:block;}
+  a[href="#App"] {
+    width: 132px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #267df4;
+    background-image: url(../img/Apple_Icon.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 17px;
+    background-position-y: 9px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 12px;
+    padding-left: 13px;
+  }
+  .dropdown-contentrigth a:first-child {
+    color: #1b1c1e;
+    font-family: 'Lato';
+    opacity: 0.4;
+    font-size: 16px;
+    font-weight: bold;
+    }
+    a[href="#Contacts"] {
+    color: #26272d;
+    font-family: 'Lato';
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .dropdown {
+      display: none;
+  }
